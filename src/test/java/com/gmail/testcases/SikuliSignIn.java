@@ -50,11 +50,8 @@ public class SikuliSignIn {
 		//driver.switchTo().alert();
 		screen.click(btn_logout);
 		Thread.sleep(3000);
-		driver.quit();
+		driver.quit();	
 		
-		
-		
-		driver.quit();
 		
 	}
 
