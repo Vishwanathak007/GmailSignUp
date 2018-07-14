@@ -22,6 +22,8 @@ public class SikuliSignIn {
 		Pattern email=new Pattern("C:\\Workspace\\GmailSignUp\\sikuli_images\\email.png");
 		Pattern password=new Pattern("C:\\Workspace\\GmailSignUp\\sikuli_images\\password.png");
 		Pattern btn_Next=new Pattern("C:\\Workspace\\GmailSignUp\\sikuli_images\\btn_Next.png");
+		Pattern arrow_logout=new Pattern("C:\\Workspace\\GmailSignUp\\sikuli_images\\arrow_logout.png");
+		Pattern btn_logout=new Pattern("C:\\Workspace\\GmailSignUp\\sikuli_images\\btn_logout.png");
 		
 		Properties prop=new Properties();
 		FileInputStream fis=new FileInputStream("C:\\Workspace\\GmailSignUp\\src\\main\\java\\com\\gmail\\testdata\\config.properties");
@@ -35,14 +37,23 @@ public class SikuliSignIn {
 		screen.wait(home_signIn,10);
 		screen.click(home_signIn);
 		Thread.sleep(3000);
-		screen.type(email,prop.getProperty("email"));
+		screen.type(email,"ERP@vrkp.in");
 		Thread.sleep(3000);
-		screen.click(btn_Next);
-		screen.wait(password,10);
-		screen.type(password,prop.getProperty("password"));
+		screen.click(btn_Next);	
+		Thread.sleep(4000);
+		screen.type(password,"ERP@12345");
 		Thread.sleep(3000);
 		screen.click(btn_Next);
 		Thread.sleep(5000);
+		screen.click(arrow_logout);
+		Thread.sleep(3000);
+		//driver.switchTo().alert();
+		screen.click(btn_logout);
+		Thread.sleep(3000);
+		driver.quit();
+		
+		
+		
 		driver.quit();
 		
 	}
