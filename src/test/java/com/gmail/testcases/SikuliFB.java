@@ -45,9 +45,8 @@ public class SikuliFB {
 		Thread.sleep(3000);
 		
 		//Logout		
-		Alert alert = driver.switchTo().alert();
-		alert.accept();
-		Thread.sleep(3000);
+		//Alert alert = driver.switchTo().alert();
+		//alert.accept();	
 		screen.click(btn_allow);
 		Thread.sleep(3000);
 		screen.click(arrow_logout);
