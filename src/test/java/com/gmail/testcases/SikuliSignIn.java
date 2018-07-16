@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
@@ -31,6 +32,9 @@ public class SikuliSignIn {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Softwares\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		
+		//System.setProperty("webdriver.gecko.driver", "C:\\Softwares\\geckodriver.exe");
+		//WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("urllink"));
 		
