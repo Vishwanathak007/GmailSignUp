@@ -54,7 +54,7 @@ public class SikuliSignIn {
 		driver.get(prop.getProperty("urllink"));
 		}
 		
-		@Test
+		@Test(priority=1)
 		public void login_logout_test() throws InterruptedException, FindFailed
 		{
 		screen.wait(home_signIn,10);

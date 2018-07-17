@@ -1,11 +1,9 @@
 package com.gmail.testcases;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.sikuli.script.FindFailed;
@@ -52,7 +50,7 @@ public class SikuliFB {
 		driver.get(prop.getProperty("fblink"));
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void login_logout_test() throws InterruptedException, FindFailed
 	{
 		//Login
@@ -65,8 +63,7 @@ public class SikuliFB {
 		Thread.sleep(3000);
 		
 		//Logout		
-		//Alert alert = driver.switchTo().alert();
-		//alert.accept();	
+			
 		screen.click(btn_allow);
 		Thread.sleep(3000);
 		screen.click(arrow_logout);
