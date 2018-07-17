@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.gmail.testcases.GmailSignupTest">
+      <class name="com.gmail.testcases.SikuliFB">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="login_logout_test"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="gmailSignupTest1" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.gmail.testcases.GmailSignupTest -->
+      </class> <!-- com.gmail.testcases.SikuliFB -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

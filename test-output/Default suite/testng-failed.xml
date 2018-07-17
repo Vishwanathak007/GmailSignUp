@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.gmail.testcases.GmailSignup1Test">
+      <class name="com.gmail.testcases.SikuliFB">
         <methods>
-          <include name="gmailSignupTest1"/>
+          <include name="closeBrowser"/>
+          <include name="login_logout_test"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.gmail.testcases.GmailSignup1Test -->
+      </class> <!-- com.gmail.testcases.SikuliFB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

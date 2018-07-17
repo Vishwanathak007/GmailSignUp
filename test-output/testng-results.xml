@@ -1,91 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="81253" started-at="2018-07-04T12:35:01Z" finished-at="2018-07-04T12:36:22Z">
+  <suite name="Default suite" duration-ms="25954" started-at="2018-07-17T09:42:16Z" finished-at="2018-07-17T09:42:42Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="81253" started-at="2018-07-04T12:35:01Z" finished-at="2018-07-04T12:36:22Z">
-      <class name="com.gmail.testcases.GmailSignupTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="setUp" is-config="true" duration-ms="29444" started-at="2018-07-04T18:05:02Z" finished-at="2018-07-04T18:05:31Z">
+    <test name="Default test" duration-ms="25954" started-at="2018-07-17T09:42:16Z" finished-at="2018-07-17T09:42:42Z">
+      <class name="com.gmail.testcases.SikuliFB">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="setUp" is-config="true" duration-ms="9500" started-at="2018-07-17T15:12:16Z" finished-at="2018-07-17T15:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gmailSignupTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="gmailSignupTest1" duration-ms="19211" started-at="2018-07-04T18:05:31Z" data-provider="getTestData1" finished-at="2018-07-04T18:05:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vishwa]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cr007]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vishwaCR0007]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Vishwa007$]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Vishwa007$]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="login_logout_test()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="login_logout_test" duration-ms="16431" started-at="2018-07-17T15:12:26Z" finished-at="2018-07-17T15:12:42Z">
+          <exception class="org.sikuli.script.FindFailed">
+            <message>
+              <![CDATA[C:/Workspace/GmailSignUp/sikuli_images/fb/btn_allow.png: (74x35) in S(0)[0,0 1366x768] E:Y, T:3.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[FindFailed: C:/Workspace/GmailSignUp/sikuli_images/fb/btn_allow.png: (74x35) in S(0)[0,0 1366x768] E:Y, T:3.0
+  Line 2759, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2759)
+	at org.sikuli.script.Region.find(Region.java:2336)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3213)
+	at org.sikuli.script.Region.click(Region.java:3698)
+	at org.sikuli.script.Region.click(Region.java:3683)
+	at com.gmail.testcases.SikuliFB.login_logout_test(SikuliFB.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.sikuli.script.FindFailed -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gmailSignupTest1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="tearDown" is-config="true" duration-ms="485" started-at="2018-07-04T18:05:50Z" finished-at="2018-07-04T18:05:51Z">
+        </test-method> <!-- login_logout_test -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-07-17T15:12:42Z" finished-at="2018-07-17T15:12:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="setUp" is-config="true" duration-ms="12982" started-at="2018-07-04T18:05:51Z" finished-at="2018-07-04T18:06:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gmailSignupTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="gmailSignupTest1" duration-ms="17588" started-at="2018-07-04T18:06:04Z" data-provider="getTestData1" finished-at="2018-07-04T18:06:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vishu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cr0007]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vishwaCR00007]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Vishwa007$$]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Vishwa007$$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gmailSignupTest1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.gmail.testcases.GmailSignupTest@1d057a39]" name="tearDown" is-config="true" duration-ms="434" started-at="2018-07-04T18:06:21Z" finished-at="2018-07-04T18:06:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.gmail.testcases.GmailSignupTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.gmail.testcases.SikuliFB -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
