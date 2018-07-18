@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33403" started-at="2018-07-17T11:40:35Z" finished-at="2018-07-17T11:41:08Z">
+  <suite name="Default suite" duration-ms="48962" started-at="2018-07-18T05:32:48Z" finished-at="2018-07-18T05:33:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33403" started-at="2018-07-17T11:40:35Z" finished-at="2018-07-17T11:41:08Z">
-      <class name="com.gmail.testcases.SikuliFB">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="setUp" is-config="true" duration-ms="15983" started-at="2018-07-17T17:10:35Z" finished-at="2018-07-17T17:10:51Z">
+    <test name="Default test" duration-ms="48962" started-at="2018-07-18T05:32:48Z" finished-at="2018-07-18T05:33:37Z">
+      <class name="com.gmail.testcases.SikuliSignIn">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gmail.testcases.SikuliSignIn@59fa1d9b]" name="setUp" is-config="true" duration-ms="19434" started-at="2018-07-18T11:02:49Z" finished-at="2018-07-18T11:03:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="login_logout_test()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="login_logout_test" duration-ms="16357" started-at="2018-07-17T17:10:51Z" finished-at="2018-07-17T17:11:07Z">
+        <test-method status="FAIL" signature="login_logout_test()[pri:0, instance:com.gmail.testcases.SikuliSignIn@59fa1d9b]" name="login_logout_test" duration-ms="28516" started-at="2018-07-18T11:03:08Z" finished-at="2018-07-18T11:03:36Z">
           <exception class="org.sikuli.script.FindFailed">
             <message>
-              <![CDATA[C:/Workspace/GmailSignUp/sikuli_images/fb/btn_allow.png: (74x35) in S(0)[0,0 1366x768] E:Y, T:3.0]]>
+              <![CDATA[C:/Workspace/GmailSignUp/sikuli_images/arrow_logout.png: (45x44) in S(0)[0,0 1366x768] E:Y, T:3.0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: C:/Workspace/GmailSignUp/sikuli_images/fb/btn_allow.png: (74x35) in S(0)[0,0 1366x768] E:Y, T:3.0
+              <![CDATA[FindFailed: C:/Workspace/GmailSignUp/sikuli_images/arrow_logout.png: (45x44) in S(0)[0,0 1366x768] E:Y, T:3.0
   Line 2759, in file Region.java
 
 	at org.sikuli.script.Region.wait(Region.java:2759)
@@ -25,7 +25,7 @@
 	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3213)
 	at org.sikuli.script.Region.click(Region.java:3698)
 	at org.sikuli.script.Region.click(Region.java:3683)
-	at com.gmail.testcases.SikuliFB.login_logout_test(SikuliFB.java:67)
+	at com.gmail.testcases.SikuliSignIn.login_logout_test(SikuliSignIn.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_logout_test -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.testcases.SikuliFB@59fa1d9b]" name="closeBrowser" is-config="true" duration-ms="918" started-at="2018-07-17T17:11:07Z" finished-at="2018-07-17T17:11:08Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.testcases.SikuliSignIn@59fa1d9b]" name="closeBrowser" is-config="true" duration-ms="839" started-at="2018-07-18T11:03:37Z" finished-at="2018-07-18T11:03:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.gmail.testcases.SikuliFB -->
+      </class> <!-- com.gmail.testcases.SikuliSignIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

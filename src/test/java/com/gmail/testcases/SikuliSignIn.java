@@ -48,8 +48,6 @@ public class SikuliSignIn {
 	 	 System.setProperty("webdriver.chrome.driver", "C:\\Softwares\\chromedriver.exe");
 		 driver=new ChromeDriver();
 		
-		//System.setProperty("webdriver.gecko.driver", "C:\\Softwares\\geckodriver.exe");
-		//WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("urllink"));
 		}

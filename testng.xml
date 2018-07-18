@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.gmail.testcases.GmailSignupTest"/>
+       <class name="com.gmail.testcases.SikuliFB"/>
+       <class name="com.gmail.testcases.SikuliSignIn"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
